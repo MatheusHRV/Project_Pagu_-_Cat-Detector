@@ -141,7 +141,7 @@ Project-Pagu/
 
 ---
 
-## 🐈‍⬛ Dedicatória, Creditos e Licença
+## Dedicatória, Creditos e Licença
 
 Nomeei este projeto em homenagem ao aniversário de 25 anos de uma amiga que ama os gatos, parabens Pagu!!
 
@@ -153,8 +153,4 @@ Distribuído sob licença **MIT**, permitindo modificação e uso livre.
 Contribuições são bem-vindas!  
 Abra uma *issue* ou *pull request* no repositório.
 
----
 
-### 🧡 “Pagu” — em homenagem à coragem criativa.
-> “Ser independente é ser dona de si mesma, e isso é mais do que liberdade: é criação.”  
-> — Patrícia Galvão (Pagu)
