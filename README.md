@@ -1,16 +1,16 @@
 
 # 🐾 Project Pagu – Cat Detector
 
-**Project Pagu** é um pipeline de processamento e estilização de vídeos com detecção automática de gatos.  
+**Project Pagu** é um pipeline de processamento com detecção automática de gatos e estilização de vídeos  
 Criado para demonstrar como modelos de visão computacional podem ser aplicados em vídeos do mundo real, o projeto combina **processamento em chunks**, **detecção com YOLOv8**, e **estilização automática** dos frames.
 
 ---
 
-## 🧠 O que é o Project Pagu?
+## O que é o Project Pagu?
 
 O **Project Pagu** processa vídeos de entrada, dividindo-os em pequenos trechos (“chunks”) para facilitar o uso de GPU/CPU e manter o desempenho.  
-Cada trecho é então analisado com um modelo **YOLOv8 (Ultralytics)**, capaz de detectar **gatos** (e outros objetos, se desejado).  
-Após a detecção, o vídeo pode ser **estilizado** — aplicando transformações visuais (como filtros artísticos) apenas nas partes relevantes.
+Cada trecho é então analisado com um modelo **YOLOv8 (Ultralytics)**, capaz de detectar **gatos**.
+Após a detecção, o vídeo pode ser **estilizado** — aplicando transformações visuais (como filtros artísticos, blur) apenas nas partes relevantes.
 
 ---
 
@@ -28,7 +28,7 @@ Após a detecção, o vídeo pode ser **estilizado** — aplicando transformaç�
 
 ---
 
-## 🧩 Estrutura Técnica do Pipeline
+## Estrutura Técnica do Pipeline
 
 1. **Entrada do Usuário**  
    O usuário define a pasta onde os vídeos de entrada estão localizados (`input_path`) e a pasta de saída (`output_path`).
@@ -52,7 +52,7 @@ Após a detecção, o vídeo pode ser **estilizado** — aplicando transformaç�
 
 ### Passo 1️⃣ — Abrir no Colab
 - Acesse o notebook diretamente pelo link do GitHub (por exemplo):  
-  👉 [Abrir no Google Colab](https://colab.research.google.com/github/SEU_USUARIO/Project-Pagu/blob/main/stylize_cats_colab_cleaned_v2.ipynb)
+  [Abrir no Google Colab](https://colab.research.google.com/github/SEU_USUARIO/Project-Pagu/blob/main/stylize_cats_colab_cleaned_v2.ipynb)
 
 ---
 
@@ -67,7 +67,7 @@ Se estiver usando o **Google Drive**, o Colab pedirá autorização para montá-
 
 ---
 
-### Passo 3️⃣ — Definir Caminhos e Parâmetros
+### Passo 3 — Definir Caminhos e Parâmetros
 
 Edite **somente** a célula de configuração.  
 Ela contém instruções simples em português:
@@ -80,11 +80,11 @@ chunk_duration = 8   # Duração de cada trecho (em segundos)
 use_gpu = True       # Se GPU estiver disponível, define como True
 ```
 
-> 💡 **Dica:** Use caminhos dentro do seu Google Drive para salvar os resultados.
+> **Dica:** Use caminhos dentro do seu Google Drive para salvar os resultados.
 
 ---
 
-### Passo 4️⃣ — Executar o Pipeline
+### Passo 4 — Executar o Pipeline
 
 Basta rodar as células seguintes na ordem.  
 O pipeline faz automaticamente:
@@ -98,7 +98,7 @@ No final, o vídeo resultante estará na pasta de saída (`output_path`).
 
 ---
 
-### Passo 5️⃣ — Verificar Resultados
+### Passo 5 — Verificar Resultados
 
 Na pasta de saída você encontrará:
 ```
@@ -110,7 +110,7 @@ Na pasta de saída você encontrará:
 
 ---
 
-## 🧪 Exemplo de Uso
+## Exemplo de Uso
 
 1. Faça upload de um vídeo chamado `my_cat.mp4` para seu Drive em:
    ```
@@ -129,28 +129,26 @@ Na pasta de saída você encontrará:
 
 ---
 
-## 🧰 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 Project-Pagu/
 │
-├── stylize_cats_colab_cleaned_v2.ipynb   # Notebook principal (executar no Colab)
+├── pagu_cat_detector.ipynb   # Notebook principal (executar no Colab)
 ├── README.md                             # Este arquivo
 └── requirements.txt                      # Dependências (para execução local)
 ```
 
 ---
 
-## 🐈‍⬛ Créditos e Licença
+## 🐈‍⬛ Dedicatória, Creditos e Licença
 
-Desenvolvido por **Matheus Henrique**.  
-Inspirado em aplicações de *Computer Vision* e *Generative AI*.  
+Nomeei este projeto em homenagem ao aniversário de 25 anos de uma amiga que ama os gatos, parabens Pagu!!
 
-Distribuído sob licença **MIT**, permitindo modificação e uso livre, desde que mantidos os créditos.
+Desenvolvido por: Matheus Henrique
+Distribuído sob licença **MIT**, permitindo modificação e uso livre.
 
 ---
-
-## 🌐 Contato e Contribuições
 
 Contribuições são bem-vindas!  
 Abra uma *issue* ou *pull request* no repositório.
