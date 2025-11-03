@@ -143,7 +143,7 @@ Project-Pagu/
 
 ## Dedicatória, Creditos e Licença
 
-Nomeei este projeto em homenagem ao aniversário de 25 anos de uma amiga que ama os gatos, parabens Pagu!!
+Nomeei este projeto em homenagem ao aniversário de 25 anos de uma amiga que ama os gatos, feliz aniversário, Ana!!
 
 Desenvolvido por: Matheus Henrique
 Distribuído sob licença **MIT**, permitindo modificação e uso livre.
